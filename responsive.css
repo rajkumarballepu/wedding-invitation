@@ -1,0 +1,64 @@
+@media screen and (max-width: 720px) {
+
+    h3 {
+        font-size: .8em;
+    }
+
+    p {
+        font-size: .8rem;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .background {
+        background-size: cover !important;
+    }
+    
+    .inner-container {
+        /* padding: 1rem 0rem; */
+        height: 90% !important;
+        width: 90% !important;
+    }
+    
+    .wedding-intro {
+        flex-direction: column;
+    }
+
+    .wedding-intro .frame-container {
+        height: fit-content !important;
+    }
+
+    .wedding-intro  .frame-container .frame {
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    .wedding-intro .seperator {
+        display: none;
+        position: absolute;
+        transform: rotate(90deg) !important;
+    }
+
+    .wedding-intro .frame-container {
+        width: 100%;
+    }
+
+    .wedding-intro .content {
+        padding: 1rem 0rem !important;
+        width: 100%;
+        /* height: fit-content !important; */
+    }
+
+    .wedding-intro .content .surname {
+        font-size: 1.8rem !important;
+        text-decoration-thickness: 1px !important;
+
+    }
+
+    .date-venue-container .deco1 {
+        display: none;
+    }
+    
+}

@@ -1,0 +1,254 @@
+:root {
+    --primary-color: #9E4141;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    /* overflow-y: scroll; */
+    overflow-x: hidden;
+    scrollbar-width: none;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-family: "Motserrat", serif;
+    font-size: 2.5rem;
+    line-height: 4rem;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.background {
+    background-image: url("/assets/images/background.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scrollbar-width: none;
+    opacity: 0.51;
+    z-index: 1;
+    scroll-behavior: smooth;
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.container .inner-container {
+    width: 1200px;
+    height: 720px;
+    background-color: rgba(251, 248, 241, .51);
+    box-shadow: #9E414155 0px 3px 8px;
+    border: 1px solid var(--primary-color);
+}
+
+/* Wedding intro */
+
+.wedding-intro {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.wedding-intro .frame-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wedding-intro .frame-container .frame {
+    width: 360px;
+    height: 360px;
+    position: relative;
+}
+
+.wedding-intro .frame > img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+.wedding-intro .frame .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rebeccapurple;
+    position: absolute;
+    top: 2.5%;
+    left: 5%;
+    scale: .77;
+    z-index: 2;
+}
+
+.wedding-intro .content {
+    padding: 5rem 1rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.wedding-intro .content .surname {
+    font-family: 'Mea Culpa';
+    color: #9E4141;
+    font-size: 3.5rem;
+    text-decoration: wavy underline;
+    text-decoration-thickness: 5px;
+}
+
+.wedding-intro .content .couple-names-container {
+    margin: 1rem;
+    align-self: center;
+    justify-self: center;
+}
+
+.wedding-intro .content .couple-name {
+    font-family: "Imperial Script", cursive;
+    font-size: 2.5rem;
+}
+
+.couple-name.bride {
+    color: var(--primary-color);
+}
+
+.wedding-intro .content img {
+    width: 200px;
+}
+
+.wedding-intro .btn {
+    position: absolute;
+    display: inline-block;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    padding: 1rem;
+    letter-spacing: 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/* Date Wedding container */
+
+.date-venue-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.date-venue-container .deco {
+    position: absolute;
+    top: 0;
+}
+
+.date-venue-container .deco.horizantal {
+    width: 100%;
+}
+
+.date-venue-container .deco.deco.horizantal.bottom {
+    top: 100%;
+    transform: translateY(-100%) rotate(180deg);
+}
+
+
+.date-venue-container .deco.bottom {
+    transform: rotate(180deg);
+}
+
+.date-venue-container .deco.vertical {
+    height: 100%;
+    left: 0;
+}
+
+.date-venue-container .deco.vertical.right {
+    left: 100%;
+    transform: translateX(-100%) rotate(180deg);
+}
+
+.date-venue-container .deco.hanger {
+    left: 25%;
+}
+
+.date-venue-container .deco.plant {
+    top: 100%;
+    transform: translateY(-100%);
+    right: 25%;
+}
+
+
+.save-the-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.save-the-date > p {
+    text-align: center;
+    position: absolute;
+    font-family: 'Mea Culpa';
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.date-venue-container .date {
+    margin: 1rem 0rem;
+    /* color: var(--primary-color); */
+}
+
+.date-venue-container .date span {
+    color: var(--primary-color);
+    display: inline-block;
+}
+
+.date-venue-container .venue-container {
+    width: 200px;
+}
+
+.date-venue-container .venue {
+    font-family: "Mea Culpa";
+    color: var(--primary-color);
+    font-size: 3rem;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+.date-venue-container .address {
+    font-weight: 600;
+}
